@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/edittextshape"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:elevation="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:id="@+id/cardView4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_height="64dp">
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars"
+        android:id="@+id/OrderDetailRecycleDishImage"
+        />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/OrderDetailRecycleDishName"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="DishName"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Quantity"
+        android:textColor="@color/main"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/OrderDetailRecycleDishName"
+        app:layout_constraintTop_toBottomOf="@+id/OrderDetailRecycleDishName" />
+
+    <TextView
+        android:id="@+id/OrderDetailRecycleDishQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="100"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/main"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+</androidx.constraintlayout.widget.ConstraintLayout>

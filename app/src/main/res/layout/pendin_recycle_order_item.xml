@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="2dp"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/najen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/yeonsung_regular"
+            android:text="Order ID"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/OrderItemId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textColor="@color/main"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/najen" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/yeonsung_regular"
+            android:text="Items"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/OrderItemId" />
+
+        <TextView
+            android:id="@+id/OrderItemQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeonsung_regular"
+            android:text="10"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:fontFamily="@font/yeonsung_regular"
+            android:textColor="@color/main"
+            android:textSize="22sp"
+            android:layout_marginStart="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/OrderItemQuantity"
+            app:layout_constraintStart_toEndOf="@+id/OrderItemQuantity"
+            app:layout_constraintTop_toTopOf="@+id/OrderItemQuantity" />
+
+        <TextView
+            android:id="@+id/OrderItemTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeonsung_regular"
+            android:text="price"
+            android:textColor="@color/main"
+            android:textSize="22sp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView18"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toTopOf="@+id/textView18"
+            app:layout_constraintVertical_bias="0.516" />
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeonsung_regular"
+            android:text="timestamp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/OrderItemAccept"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/greenbuttongradient"
+            android:fontFamily="@font/yeonsung_regular"
+            android:gravity="center"
+            android:text="Accept"
+            android:layout_marginEnd="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/OrderItemDecline"
+            app:layout_constraintEnd_toStartOf="@+id/OrderItemDecline"
+            app:layout_constraintTop_toTopOf="@+id/OrderItemDecline" />
+
+        <TextView
+            android:id="@+id/OrderItemDecline"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/greenbuttongradient"
+            android:fontFamily="@font/yeonsung_regular"
+            android:gravity="center"
+            android:text="Reject"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="35dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

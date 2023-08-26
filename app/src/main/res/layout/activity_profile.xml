@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="6dp"
+    android:background="@color/white"
+    android:paddingEnd="6dp"
+    tools:context=".Activity.ProfileActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintBottom_toTopOf="@+id/profileFragmentSaveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!-- Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edittextshape"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:minHeight="56dp"
+                android:orientation="horizontal">
+
+                <!-- TextView for "Name" label -->
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <!-- EditText for name -->
+                <EditText
+                    android:id="@+id/profileFragmentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Fill Name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/lato_regular"
+                    android:inputType="textPersonName"
+                    android:textColor="#9E6B6B" />
+            </LinearLayout>
+
+            <!-- Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edittextshape"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:minHeight="56dp"
+                android:orientation="horizontal">
+
+                <!-- TextView for "Address" label -->
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <!-- EditText for address -->
+                <EditText
+                    android:id="@+id/profileFragmentAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_weight="1"
+                    android:hint="Fill Address"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/lato_regular"
+                    android:inputType="textMultiLine"
+                    android:textColor="#9E6B6B" />
+
+            </LinearLayout>
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edittextshape"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- TextView for "Email" label -->
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <!-- EditText for email -->
+                <EditText
+                    android:id="@+id/profileFragmentEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Fill Email"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/lato_regular"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#9E6B6B" />
+            </LinearLayout>
+
+            <!-- Phone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittextshape"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- TextView for "Phone" label -->
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Phone"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <!-- EditText for phone -->
+                <EditText
+                    android:id="@+id/profileFragmentPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Fill Mobile No."
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/lato_regular"
+                    android:inputType="number"
+                    android:textColor="#9E6B6B" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/profileFragmentSaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Edit Information"
+        android:textAllCaps="false"
+        android:elevation="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/main"
+        android:fontFamily="@font/yeonsung_regular"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextshape"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
